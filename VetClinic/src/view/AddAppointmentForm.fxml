@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddAppointmentFormController">
+   <children>
+      <Pane layoutX="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="696.0">
+         <children>
+            <ImageView fx:id="forepawLogo" fitHeight="30.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#forepawLogoClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="forepawLabel" layoutX="53.0" layoutY="16.0" onMouseClicked="#forepawLabelClicked" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="removeAppointmentLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" onMouseClicked="#removeAppointmentMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="remove appointment" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="2.0" />
+            <Label layoutX="280.0" layoutY="20.0" prefWidth="244.0" style="-fx-alignment: center;" text="Add Appointment">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="80.0" text="customer name">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="117.0" text="doctor name">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="154.0" text="date">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="191.0" text="time">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="228.0" text="notes">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="addAppointmentLabel" layoutX="343.0" layoutY="314.0" onMouseClicked="#addAppointmentMouseClicked" prefHeight="30.0" prefWidth="160.0" style="-fx-alignment: center; -fx-background-color: black;" text="Add Appointment" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="notesText" layoutX="340.0" layoutY="228.0" prefHeight="64.0" prefWidth="244.0" />
+            <Separator layoutX="197.0" layoutY="56.0" prefHeight="3.0" prefWidth="486.0" />
+            <Label layoutX="504.0" layoutY="80.0" text="appointment id">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="appointmentIdText" accessibleRole="COMBO_BOX" editable="false" layoutX="618.0" layoutY="75.0" prefHeight="30.0" prefWidth="65.0">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="customerComboBox" layoutX="340.0" layoutY="78.0" prefHeight="25.0" prefWidth="160.0" />
+            <ComboBox fx:id="doctorComboBox" layoutX="340.0" layoutY="115.0" prefHeight="25.0" prefWidth="160.0" />
+            <DatePicker fx:id="dateText" layoutX="341.0" layoutY="152.0" prefHeight="25.0" prefWidth="160.0" />
+            <ComboBox fx:id="ampmComboBox" layoutX="454.0" layoutY="189.0" prefHeight="25.0" prefWidth="39.0" />
+            <ComboBox fx:id="hourComboBox" layoutX="340.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+            <ComboBox fx:id="minuteComboBox" layoutX="398.0" layoutY="189.0" prefHeight="25.0" prefWidth="39.0" />
+            <Label fx:id="warningLabel" layoutX="342.0" layoutY="355.0" prefHeight="20.0" prefWidth="244.0" style="-fx-alignment: center;" textFill="#b90808">
+               <font>
+                  <Font name="Poppins Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.viewRoleFormController">
+   <children>
+      <ImageView fx:id="forepawLogo" fitHeight="30.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#forepawLogoClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="forepawLabel" layoutX="53.0" layoutY="16.0" onMouseClicked="#forepawLabelClicked" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="addRoleLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" onMouseClicked="#addRoleMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="add role" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="updateRoleLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="196.0" onMouseClicked="#updateRoleMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="update role" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="deleteRoleLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="238.0" onMouseClicked="#deleteRoleMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="delete role" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="2.0" />
+      <Label layoutX="280.0" layoutY="20.0" prefWidth="244.0" style="-fx-alignment: center;" text="View Role">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="197.0" layoutY="56.0" prefHeight="3.0" prefWidth="486.0" />
+      <TableView fx:id="roleTable" layoutX="205.0" layoutY="69.0" prefHeight="314.0" prefWidth="470.0">
+         <columns>
+            <TableColumn fx:id="col_rolid" prefWidth="95.0" text="roleid" />
+            <TableColumn fx:id="col_rolename" prefWidth="98.0" text="rolename" />
+            <TableColumn fx:id="col_priority" prefWidth="113.0" text="priority" />
+            <TableColumn fx:id="col_description" prefWidth="162.0" text="description" />
+            <TableColumn fx:id="col_address" minWidth="0.0" prefWidth="0.0" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DeleteRoleFormController">
+   <children>
+      <ImageView fx:id="forepawLogo" fitHeight="30.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#forepawLogoClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="forepawLabel" layoutX="53.0" layoutY="16.0" onMouseClicked="#forepawLabelClicked" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="addRoleLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" onMouseClicked="#addRoleMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="add role" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="updateRoleLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="196.0" onMouseClicked="#updateRoleMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="update role" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="viewRolesLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="238.0" onMouseClicked="#viewRolesMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="view roles" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="2.0" />
+      <Label layoutX="280.0" layoutY="20.0" prefWidth="244.0" style="-fx-alignment: center;" text="Delete Role">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="119.0" text="name">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="156.0" text="priority">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="190.0" text="description">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="80.0" text="role id">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="deleteRoleLabel" layoutX="310.0" layoutY="271.0" onMouseClicked="#deleteRoleMouseClicked" prefHeight="30.0" prefWidth="160.0" style="-fx-alignment: center; -fx-background-color: black;" text="Delete Role" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameText" editable="false" layoutX="306.0" layoutY="117.0" prefHeight="20.0" prefWidth="167.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="descriptionText" editable="false" layoutX="307.0" layoutY="190.0" prefHeight="64.0" prefWidth="244.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="roleIdText" layoutX="307.0" layoutY="75.0" prefHeight="30.0" prefWidth="135.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="197.0" layoutY="56.0" prefHeight="3.0" prefWidth="486.0" />
+      <ImageView fx:id="searchLabel" fitHeight="23.0" fitWidth="19.0" layoutX="454.0" layoutY="80.0" onMouseClicked="#searchMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/forepaw-main/src/main/resources/com/forepaw/clinic/images/search.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="warningLabel" layoutX="310.0" layoutY="316.0" prefHeight="17.0" prefWidth="244.0" style="-fx-alignment: center;" textFill="#a90505">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priorityText" editable="false" layoutX="307.0" layoutY="153.0" prefHeight="25.0" prefWidth="167.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

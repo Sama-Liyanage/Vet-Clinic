@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.viewCustomerFormController">
+   <children>
+      <ImageView fx:id="forepawLogo" fitHeight="30.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#forepawLogoClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="forepawLabel" layoutX="53.0" layoutY="16.0" onMouseClicked="#forepawLabelClicked" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustomerLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" onMouseClicked="#addCustomerMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="add customer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="updateCustomerLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="196.0" onMouseClicked="#updateCustomerMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="update customer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="deleteCustomerLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="238.0" onMouseClicked="#deleteCustomerMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="delete customer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="2.0" />
+      <Label layoutX="280.0" layoutY="20.0" prefWidth="244.0" style="-fx-alignment: center;" text="View Customers">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="197.0" layoutY="56.0" prefHeight="3.0" prefWidth="486.0" />
+      <TableView fx:id="customerTable" layoutX="205.0" layoutY="69.0" prefHeight="314.0" prefWidth="486.0">
+         <columns>
+            <TableColumn fx:id="col_cid" prefWidth="75.0" text="cid" />
+            <TableColumn fx:id="col_name" prefWidth="90.0" text="name" />
+            <TableColumn fx:id="col_email" prefWidth="102.0" text="email" />
+            <TableColumn fx:id="col_phone" prefWidth="92.0" text="phone" />
+            <TableColumn fx:id="col_address" prefWidth="125.0" text="address" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

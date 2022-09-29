@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPageFormController">
+   <children>
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="44.0" layoutY="8.0" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="175.0" text="username">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="212.0" text="password">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameText" layoutX="106.0" layoutY="170.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="loginButton" layoutX="146.0" layoutY="252.0" onMouseClicked="#onLoginButtonClicked" prefHeight="30.0" prefWidth="72.0" style="-fx-alignment: center; -fx-background-color: black;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordText" layoutX="106.0" layoutY="209.0" prefHeight="25.0" prefWidth="180.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="warningLabel" layoutX="21.0" layoutY="131.0" prefHeight="17.0" prefWidth="267.0" style="-fx-alignment: center;" textFill="#b41111">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="307.0" prefHeight="355.0" prefWidth="420.0">
+         <children>
+            <ImageView fitHeight="383.0" fitWidth="440.0" layoutX="-13.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/LogIn1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="386.0" layoutX="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/logo320x80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView glyphName="LOCK" layoutX="131.0" layoutY="105.0" size="50" wrappingWidth="30.000012397766113" />
+   </children>
+</Pane>

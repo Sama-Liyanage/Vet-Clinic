@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.viewAppointmentFormController">
+   <children>
+      <ImageView fx:id="forepawLogo" fitHeight="30.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#forepawLogoClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="forepawLabel" layoutX="53.0" layoutY="16.0" onMouseClicked="#forepawLabelClicked" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="addAppointmentLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" onMouseClicked="#addAppointmentMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="add Appointment" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="updateAppointmentLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="196.0" onMouseClicked="#updateAppointmentMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="update Appointment" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="deleteAppointmentLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="238.0" onMouseClicked="#deleteAppointmentMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="delete Appointment" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="2.0" />
+      <Label layoutX="280.0" layoutY="20.0" prefWidth="244.0" style="-fx-alignment: center;" text="View Appointment">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="197.0" layoutY="45.0" prefHeight="3.0" prefWidth="486.0" />
+      <TableView fx:id="appointmentTable" layoutX="205.0" layoutY="69.0" prefHeight="314.0" prefWidth="625.0">
+         <columns>
+            <TableColumn fx:id="col_AppointmentId" prefWidth="115.0" text="Appointment Id" />
+            <TableColumn fx:id="col_Customername" prefWidth="148.0" text="Customer Name" />
+            <TableColumn fx:id="col_DoctorName" prefWidth="139.0" text="Doctor Name" />
+            <TableColumn fx:id="col_Date" prefWidth="104.0" text="Date" />
+            <TableColumn fx:id="col_Time" prefWidth="118.0" text="Time" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RemoveAppointmentFormController">
+   <children>
+      <ImageView fx:id="forepawLogo" fitHeight="30.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#forepawLogoClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="forepawLabel" layoutX="53.0" layoutY="16.0" onMouseClicked="#forepawLabelClicked" prefHeight="30.0" prefWidth="79.0" text="HappyPaws">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="addAppointmentLabel" contentDisplay="CENTER" layoutX="14.0" layoutY="154.0" onMouseClicked="#addAppointmentMouseClicked" prefHeight="30.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: black;" text="add appointment" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="2.0" />
+      <Label layoutX="280.0" layoutY="20.0" prefWidth="244.0" style="-fx-alignment: center;" text="Remove Appointment">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="80.0" text="appointment id">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="removeAppointmentLabel" layoutX="317.0" layoutY="130.0" onMouseClicked="#removeAppointmentMouseClicked" prefHeight="30.0" prefWidth="195.0" style="-fx-alignment: center; -fx-background-color: black;" text="Remove Appointment" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="197.0" layoutY="56.0" prefHeight="3.0" prefWidth="486.0" />
+      <TextField fx:id="appointmentIdText" layoutX="340.0" layoutY="78.0">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="warningLabel" layoutX="260.0" layoutY="192.0" prefHeight="17.0" prefWidth="282.0" style="-fx-alignment: center;" textFill="#9c0707">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="searchLabel" fitHeight="43.0" fitWidth="22.0" layoutX="531.0" layoutY="82.0" onMouseClicked="#searchMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/forepaw-main/src/main/resources/com/forepaw/clinic/images/search.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
